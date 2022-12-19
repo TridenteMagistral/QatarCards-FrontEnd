@@ -1,7 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { faGear } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import "./Navbar.css"
 
 function BasicExample() {
   return (
@@ -26,8 +29,15 @@ function BasicExample() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
+        <NavDropdown title={<FontAwesomeIcon icon={faGear} />}  id="basic-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">
+            Another action
+          </NavDropdown.Item>
+        </NavDropdown>
+
       </Container>
-    </Navbar>
+    </Navbar >
   );
 }
 
