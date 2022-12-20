@@ -7,9 +7,6 @@
     display: none;
 }
 
-.icon {
-
-}
 
 @media(max-width:578px) {
     .navbar-collapse {

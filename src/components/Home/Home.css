@@ -1,6 +1,6 @@
 .wallpaper-mundial {
     background-repeat: no-repeat;
-    background-image: url("../../Images/wallpaper-mundial-Home-1.jpg");
+    background-image: url("../../Image/wallpaper-mundial-Home-1.jpg");
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -9,27 +9,37 @@
     padding-top: 60px;
 }
 
+
+
 .novedades-principales {
     height: 200px;
-    background-color: white;
+    background-color: var(--red-home-bg-color);
     margin: 5px;
     border: solid;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px #500730;
 }
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 
 .novedades-secundarias {
     height: 200px;
-    background-color: white;
+    background-color: var(--red-home-bg-color);
     margin: 5px;
     border: solid;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px #500730;
 }
 
+
 .novedades-terciarias {
     height: 160px;
-    background-color: white;
+    background-color: var(--red-home-bg-color);
     margin: 5px;
     border: solid;
     border-radius: 10px;
@@ -38,9 +48,10 @@
 
 .novedades {
     height: 160px;
-    background-color: white;
+    background-color: var(--red-home-bg-color);
     margin: 5px;
     border: solid;
+    align-items: center;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px #500730;
 }

@@ -10,7 +10,7 @@ function BasicExample() {
     <Navbar collapseOnSelect className='fixed-top ps-3' expand="sm" variant="dark">
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
       <div className='d-flex '>
-        <NavDropdown className='mx-3 m-auto d-block d-sm-none icon' title={<FontAwesomeIcon icon={faGear} />} id="basic-nav-dropdown">
+        <NavDropdown className='mx-3 m-auto d-block d-sm-none' title={<FontAwesomeIcon icon={faGear} />} id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">
             Another action
@@ -35,7 +35,7 @@ function BasicExample() {
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
-      <NavDropdown className='mx-3 m-auto d-none d-sm-block icon' title={<FontAwesomeIcon icon={faGear} />} id="basic-nav-dropdown">
+      <NavDropdown className='mx-3 m-auto d-none d-sm-block text-light' title={<FontAwesomeIcon icon={faGear} />} id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">
             Another action
