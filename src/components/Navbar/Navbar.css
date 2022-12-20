@@ -1,7 +1,18 @@
-.dropdown-menu[data-bs-popper]{
-    right: 0 ;
+.dropdown-menu[data-bs-popper] {
+    right: 0;
     left: auto;
 }
-.dropdown-toggle::after{
+
+.dropdown-toggle::after {
     display: none;
+}
+
+.icon {
+
+}
+
+@media(max-width:578px) {
+    .navbar-collapse {
+        background-color: #7c0348;
+    }
 }
