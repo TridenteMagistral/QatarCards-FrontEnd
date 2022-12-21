@@ -3,5 +3,8 @@
 }
 
 body {
+  background: url("./Image/wallpaper-mundial-Home-1.jpg") no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
   margin: 0;
 }
