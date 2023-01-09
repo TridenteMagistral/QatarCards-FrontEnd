@@ -3,8 +3,9 @@
 }
 
 body {
-  background: url("./Image/wallpaper-mundial-Home-1.jpg") no-repeat;
+  font-style: oblique;
   background-size: cover;
   overflow-x: hidden;
   margin: 0;
+  font-weight: 500;
 }
