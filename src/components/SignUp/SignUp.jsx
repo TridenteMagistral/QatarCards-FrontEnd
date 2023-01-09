@@ -96,25 +96,17 @@ export default function SignUp() {
                     <label className="mt-1" htmlFor="">Nickname</label>
                 </div>
                 <input className="m-0 mt-3" onChange={handleChange} type="text" name="nickname" id="nickname" />
-                {formError.nickname?.map(error => <p className='mt-1'>{error}</p>)}
+                {formError.nickname?.map(error => <p className='my-0'>{error}</p>)}
                 <div>
                     <label className="mt-1" htmlFor="">Email</label>
                 </div>
                 <input className="m-0 mt-3" onChange={handleChange} type="text" name="email" id="email" />
-                {
-                    <div>
-                        <p className=''>{formError.email}</p>
-                    </div>
-                }
+                {formError.email?.map(error => <p className='my-0'>{error}</p>)}
                 <div>
                     <label className="mt-1" htmlFor="">Birthday</label>
                 </div>
                 <input className="m-0 mt-3" onChange={handleChange} type="date" name="birthday" id="birthday" />
-                {
-                    <div>
-                        <p className=''>{formError.birthday}</p>
-                    </div>
-                }
+                {formError.birthday?.map(error => <p className='my-0'>{error}</p>)}
                 <div>
                     <label className="mt-1" htmlFor="">Password</label>
                 </div>
