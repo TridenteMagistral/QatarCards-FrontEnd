@@ -1,11 +1,7 @@
-.contain {
-    width: 200px;
-}
-
 .container {
-    position: relative;
-    width: 900px;
-    margin: 45px auto 0 auto;
+    width: 800px;
+    margin: 37px 2rem auto;
+    padding-bottom: 8rem;
     perspective: 1000px;
 }
 
@@ -17,18 +13,14 @@
 
 .carousel__face {
     position: absolute;
-    width: 300px;
-    height: 187px;
-    top: 20px;
-    left: 300px;
-    right: 10px;
     display: flex;
+    width: 200px;
+    left: 300px;
 }
 
 span {
     margin: auto;
 }
-
 
 .carousel__face:nth-child(1) {
     transform: rotateY(0deg) translateZ(300px);
@@ -66,13 +58,10 @@ span {
     transform: rotateY(320deg) translateZ(300px);
 }
 
-
-
 span{
-    height: 200px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
 }
-
 
 @keyframes rotate360 {
     from {
