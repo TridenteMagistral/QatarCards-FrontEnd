@@ -7,7 +7,7 @@ import Sobre from "../../Image/sobre1.png"
 export default function Carrusel() {
 
     return (
-        <Carousel className="w-50 m-auto" >
+        <Carousel className="w-50 m-auto py-5" >
             <Carousel.Item>
                 <img
                     className="d-block w-100 sobre"
@@ -35,8 +35,3 @@ export default function Carrusel() {
         </Carousel>
     );
 }
-
-
-
-
-
