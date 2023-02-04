@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 import "./Carrusel.css"
 import Carousel from 'react-bootstrap/Carousel';
-import Sobre from "../../Image/sobre1.png"
+import Sobre from "../../Image/sobre.png"
 
 export default function Carrusel() {
 
