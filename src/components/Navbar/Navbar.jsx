@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./Navbar.css"
 
-function BasicExample() {
+function Navigation() {
   return (
     <Navbar collapseOnSelect className='fixed-top ps-3' expand="sm" variant="dark">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand href="/home">Qatar Cards</Navbar.Brand>
       <div className='d-flex '>
         <NavDropdown className='mx-3 m-auto d-block d-sm-none' title={<FontAwesomeIcon icon={faGear} />} id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -16,34 +16,32 @@ function BasicExample() {
             Another action
           </NavDropdown.Item>
         </NavDropdown>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />     
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       </div>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href="#features">Features</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
-          <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Another action
+          <NavDropdown title="Cards" id="collasible-nav-dropdown">
+            <NavDropdown.Item href="/myCollection">My collection</NavDropdown.Item>
+            <NavDropdown.Item href="/swapCards">
+              Swap cards
             </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              Separated link
+            <NavDropdown.Item href="/openPacks">
+              Open packs
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
       <NavDropdown className='mx-3 m-auto d-none d-sm-block text-light' title={<FontAwesomeIcon icon={faGear} />} id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">
-            Another action
-          </NavDropdown.Item>
-        </NavDropdown>
+        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">
+          Another action
+        </NavDropdown.Item>
+      </NavDropdown>
     </Navbar>
   );
 }
 
 
-export default BasicExample;
+export default Navigation;

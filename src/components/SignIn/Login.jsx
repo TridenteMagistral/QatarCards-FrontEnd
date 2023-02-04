@@ -5,8 +5,6 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import "./login.css"
 
-
-
 export default function Login() {
 
     function ValidateEmail(email) {

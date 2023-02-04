@@ -5,7 +5,38 @@
     padding-top: 60px;
 }
 
+.containerOpenCard {
+    position: absolute;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    left: -1px;
+    right: 0;
+    outline: 0;
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 268px;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 2;
+    border: 2px solid var(--color-three);
+    background: transparent;
+    color: darken(var(--color-three), 50%);
+    font-weight: 700;
+    transform: scale(1);
+    background: radial-gradient(ellipse at center,
+            darken(var(--color-three), 10%) 0%,
+            darken(var(--color-three), 20%));
+}
 
+.containerOpenCard:hover {
+    margin-top: -5px;
+}
+
+.containerOpenCard .active {
+    transform: rotateX(-180deg);
+    opacity: 0;
+}
 
 .novedades-principales {
     height: 200px;
