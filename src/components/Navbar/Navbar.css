@@ -1,15 +1,9 @@
-.dropdown-menu[data-bs-popper] {
-    right: 0;
-    left: auto;
-}
-
 .dropdown-toggle::after {
     display: none;
 }
 
-
-@media(max-width:578px) {
-    .navbar-collapse {
-        background-color: #7c0348;
-    }
+.navbarQatar {
+    background-color: rgba(0, 0, 0, 0.361);
+    align-items: center;
+    height: 4.8rem;
 }
