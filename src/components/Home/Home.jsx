@@ -9,7 +9,7 @@ import "./Home.css"
 export default function Home() {
 
     return (
-        <div className="wallpaper-mundial  ps-5  mx-0">
+        <div className="wallpaper-mundial ps-5 mx-0">
 
             <div className="row ">
                 <div className="novedades-principales col-12 col-sm-2  ">
@@ -37,6 +37,7 @@ export default function Home() {
             <div className="container-carrusel">
                 <Carrusel />
             </div>
+
         </div>
     )
 }
